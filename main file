@@ -1,0 +1,11 @@
+s =  input("enter what qr code u want to make(website):")
+g = int(input("Press one if u want to save in svg format and press 2 for png format:"))
+
+if(g == 1):
+  url = pyqrcode.create(s)
+  url.png('myqr.svg', scale = 6)
+  print("code generated click on show files to get it")
+elif(g==2):
+  url = pyqrcode.create(s)
+  url.png('myqr.png', scale = 6)
+  print("code generated click on show files to get it")
